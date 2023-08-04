@@ -4,9 +4,10 @@ body {
 }
   
 h1 {
-    margin-top:-8px;
-    margin-left: -8px;
-    margin-right: -8px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
     font-size:60px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     background-color:rgb(62, 175, 172);
@@ -20,6 +21,26 @@ pre.start {
     font-family: Arial, Helvetica, sans-serif
 }
 
+pre.intro {
+    background-color: rgb(17, 204, 182)
+}
+
+pre.golf {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(17, 204, 182)
+}
+
+pre.chess {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: rgb(17, 204, 182)
+}
+
 h3.info {
     margin-right: 400px;
     margin-left: 400px;
@@ -29,14 +50,25 @@ h3.info {
     border:3px solid rgb(87, 160, 175);
 }
 
-p.links {
+ul.links {
     margin-top: -40px;
-    margin-left: -30px;
-    margin-right: -30px;
     background-color:rgb(43, 222, 172);
     border:3px solid rgb(87, 160, 175);
     font-size: 30px;
     font-family:'Times New Roman', Times, serif;
+    list-style-type: square; /* Remove default list-style */
+    padding-left: 0; /* Remove default padding for the <ul> */
+}
+
+ul.links li {
+    padding-left: 20px; /* Add padding to move the text away from the left edge */
+    margin-bottom: 10px; /* Add some space between list items */
+}
+
+ul.links li:before {
+    content: "\25AA"; /* Unicode for the square bullet point */
+    display: inline-block;
+    width: 20px; /* Adjust the width to control the space between bullet point and text */
 }
   
 pre {
