@@ -1,53 +1,25 @@
 body {
-    background-color: rgb(81, 226, 245);
-    text-align:center;
+    background-image: linear-gradient(135deg, #87CEFA, #1E90FF);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative; /* Set position relative to enable pseudo-elements positioning */
 }
-  
+
+.header {
+    background-color:rgb(62, 175, 172);
+    padding-top:30px;
+    padding-bottom:30px;
+}
 h1 {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
     font-size:60px;
     font-family:Georgia, 'Times New Roman', Times, serif;
-    background-color:rgb(62, 175, 172);
-    border:4px solid rgb(33, 99, 99);
     color:white;
 }
 
-pre.start {
-    margin-bottom: -20px;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif
-}
-
-pre.intro {
-    background-color: rgb(17, 204, 182)
-}
-
-pre.golf {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: rgb(17, 204, 182)
-}
-
-pre.chess {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
-    background-color: rgb(17, 204, 182)
-}
-
-h3.info {
-    margin-right: 400px;
-    margin-left: 400px;
-    font-size:40px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:rgb(43, 222, 172);
-    border:3px solid rgb(87, 160, 175);
+.footer {
+    background-color:rgb(62, 175, 172);
+    border:4px solid rgb(33, 99, 99);
 }
 
 ul.links {
@@ -70,7 +42,46 @@ ul.links li:before {
     display: inline-block;
     width: 20px; /* Adjust the width to control the space between bullet point and text */
 }
-  
+
+pre.start {
+    margin-bottom: -20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+pre.intro {
+    background-color: rgb(17, 204, 182)
+}
+
+img.portrait {
+    float:left;
+}
+
+pre.golf {
+    background-color: rgb(17, 204, 182)
+}
+
+img.golfPic {
+    float:right;
+}
+
+pre.chess {
+    background-color: rgb(17, 204, 182)
+}
+
+img.chessPic {
+    float:left;
+}
+
+h3.info {
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(43, 222, 172);
+    border:3px solid rgb(87, 160, 175);
+}
+
 pre {
     color:black;
     font-family: verdana;
