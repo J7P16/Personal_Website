@@ -1,75 +1,90 @@
-<html lang="en">
-    <!-- Title Page and CSS and JavaScript Linkage-->
-    <head>
-        <meta charset="UTF-8">
-        <title>John's Web</title>
-        <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
-    </head>
-      
-    <body>
-    <!-- This is the title -->
-    <div class="header">
-        <h1>
-            John Patrick Capocyan
-        </h1>
-    </div>
+body {
+    background-image: linear-gradient(135deg, #87CEFA, #1E90FF);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative; /* Set position relative to enable pseudo-elements positioning */
+}
 
-    <pre class="start">
-        Welcome to my website! Scroll down to learn more about me
-        and my interests!
-    </pre>
+.header {
+    background-color:rgb(62, 175, 172);
+    padding-top:30px;
+    padding-bottom:30px;
+}
+h1 {
+    font-size:60px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:white;
+}
 
-    <hr>
+.footer {
+    background-color:rgb(62, 175, 172);
+    border:4px solid rgb(33, 99, 99);
+}
 
-    <!-- Self Introduction Paragraph with Portrait Picture -->
-    <pre class="intro"><img class="portrait" src="SAT.jpg" alt="JohnPatrick" width="20%" height="40%">
-        This is me! I'm 16 years old and, I'm currently a rising junior
-        attending Clements Highschool! My favorite subjects are Math
-        and Computer Science. I love meeting with new people and learning
-        about their various backgrounds. I am always looking for new
-        opportunities to change the community and world! 
-    </pre>
+ul.links {
+    margin-top: -40px;
+    background-color:rgb(43, 222, 172);
+    border:3px solid rgb(87, 160, 175);
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    list-style-type: square; /* Remove default list-style */
+    padding-left: 0; /* Remove default padding for the <ul> */
+}
 
-    <hr>
+ul.links li {
+    padding-left: 20px; /* Add padding to move the text away from the left edge */
+    margin-bottom: 10px; /* Add some space between list items */
+}
 
-    <!-- Golf Paragraph with Golf Picture-->
-    <pre class="golf"><img class="golfPic"src="Golf.jpg" alt="GolfPose" width="20%" height="40%">
-        I also enjoy playing golf! I started playing golf in 2018
-        when my dad introduced me to the game. Now, I'm currently
-        a member of the Clements Varsity Highschool Golf Team. Aside
-        from school competition, I often compete in local tournaments
-        such as the TJGT (Texas Junior Golf Tour) and STJPGA (Southern
-        Texas Junior Professional Golf Association). I intend to play
-        golf for as long as I live!
-    </pre>
+ul.links li:before {
+    content: "\25AA"; /* Unicode for the square bullet point */
+    display: inline-block;
+    width: 20px; /* Adjust the width to control the space between bullet point and text */
+}
 
-    <hr>
+pre.start {
+    margin-bottom: -20px;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif
+}
 
-    <!-- Chess Paragraph with Chess Picture-->
-    <pre class="chess"><img class="chessPic"src="Chess.jpg" alt="ChessBoard" width="20%" height="40%">
-        I also have a strong hobby in playing chess. I started
-        playing Chess when I was in kindergarten since my brother
-        and dad taught me. I'm a four time state grade level champion
-        in Texas (3rd,4th,5th, and 6th). Aside from local and state
-        competition, I also competed in various national and international
-        events. I was one of two representatives for Texas in the National
-        Barber Chess Tournament during 2018 in Wisconsin! I also had a
-        best 7th place finish in the USCF National K-12 Chess Championship
-        in Nashville! Lastly, I was also a part of the U8 US Chess team
-        to compete in the World Youth Chess Championship in Greece during
-        2015.
-    </pre>
+pre.intro {
+    background-color: rgb(17, 204, 182)
+}
 
-    <div class="footer">
-        <h3 class="info"> My Contact Information:</h3>
-        <ul class="links">
-            <li>Phone: <a href="tel:+12819394185">+1 (281) 939-4185</a></li>
-            <li>Email: <a href="mailto:johncapocyan@gmail.com" target="_blank">johncapocyan@gmail.com</a></li>
-            <li>Linkedin: <a href="https://www.linkedin.com/in/john-capocyan-68a417286/" target="_blank"> John Capocyan</a></li>
-            <li>Instagram: <a href="https://www.instagram.com/j7p16/" target="_blank"> @j7p16</a></li>
-            <li>Discord: <a href="https://discord.com/users/418228831497748481" target="_blank">@J7P16</a></li>
-        </ul>
-    </div>
-    </body>
-</html>
+img.portrait {
+    float:left;
+}
+
+pre.golf {
+    background-color: rgb(17, 204, 182)
+}
+
+img.golfPic {
+    float:right;
+}
+
+pre.chess {
+    background-color: rgb(17, 204, 182)
+}
+
+img.chessPic {
+    float:left;
+}
+
+h3.info {
+    margin-right: 400px;
+    margin-left: 400px;
+    font-size:40px;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color:rgb(43, 222, 172);
+    border:3px solid rgb(87, 160, 175);
+}
+
+pre {
+    color:black;
+    font-family: verdana;
+    font-size: 23px;
+}
+  
