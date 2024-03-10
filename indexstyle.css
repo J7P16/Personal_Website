@@ -112,6 +112,115 @@ body{
         height: 80vh;
     }
 }
+@media (max-width: 580px) {
+    .wrapper .static-txt{
+        font-size: 40px;
+    }
+    .dynamic-txts li{
+        font-size: 40px;
+    }
+}
+@media (min-width: 769px) and (max-width: 1140px) {
+    .wrapper .static-txt{
+        font-size: 40px;
+    }
+    .dynamic-txts li{
+        font-size: 40px;
+    }
+}
+@media (max-width: 414px){
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .nameBox h1{
+        font-size: 30px;
+    }
+    .nameBox {
+        height: 100vh;
+    }
+}
+/* CODE FOR ABOUT ME PANEL */
+.about_panel{
+    width: 100%;
+    padding: 78px 0px;
+    background-color: #191919;
+}
+.about_panel img{
+    height: auto;
+    width: 420px;
+}
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about-text h1{
+    color: white;
+    font-size: 80px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.about-text h5{
+    color: white;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+.about-text span{
+    color: #f9004d;
+}
+.about-text p{
+    color: white;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+.about_panel button{
+    background: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+.about_panel button:hover{
+    background: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+@media (max-width: 1083px){
+    .about_panel img{
+        width: 220px;
+    }
+    .about-text{
+        width: 350px;
+    }
+}
+@media (max-width: 672px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-panel img{
+        width: 50%;
+    }
+    .about-text{
+        width: 90%;
+    }
+}
 
 /* CODE FOR SKILLSET PANEL */
 .skillsets_panel{
@@ -173,5 +282,18 @@ body{
 @media (max-width: 1052px) {
     .skillItem{
         height: 350px;
+    }
+}
+@media (min-width: 767px) and (max-width: 890px) {
+    .skillItem{
+        height: 450px;
+    }
+}
+@media (max-width: 600px) {
+    .skillset_grid{
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        justify-content: space-evenly;
+        align-content: space-evenly;
     }
 }
