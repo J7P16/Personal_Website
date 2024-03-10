@@ -1,0 +1,177 @@
+body{
+    background-color: white;
+}
+
+/* CODE FOR INTRODUCTION PANEL */
+.introduction_panel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.introBox {
+    width: 50%; 
+    margin-bottom: 0; 
+    box-sizing: border-box;
+    text-align: center;
+}
+.nameBox{
+    background-color: black;
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* CODE FOR THE GENERAL DESCRIPTION AND NAME*/
+.nameBox h1{
+    width: 70%;
+    font-size: 50px;
+}
+.highlight{
+    color: #0088a9;
+}
+.nameBox p{
+    width: 70%;
+    font-size: 25px;
+}
+
+/* CODE FOR THE TYPING ANIMATION */
+.wrapper{
+    display: inline-flex;
+    align-items: flex-start;
+}
+.wrapper .static-txt{
+    color: white;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 90px;
+}
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+    text-align: left;
+}
+.dynamic-txts li{
+    color: #FC6D6D;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+    animation: slide 8s steps(4) infinite;
+}
+@keyframes slide{
+    100%{
+        transform: translateY(-360px);
+    }
+}
+.dynamic-txts li span{
+    position: relative;
+    display: inline-block;
+}
+.dynamic-txts li span:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    border-left: 2px solid #FC6D6D;
+    padding:0;
+    animation: typing 2s steps(10) infinite;
+}
+@keyframes typing{
+    100%{
+        transform: translateX(100%);
+        margin: 0 -35px 0 35px;
+    }
+}
+
+.introPicBox {
+    background: linear-gradient(to left, transparent 70%, black 100%), url('assets/profilePic2.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 90vh;
+}
+
+@media (max-width: 768px) {
+    .introBox {
+        width: 100%; 
+    }
+    .introPicBox {
+        background: linear-gradient(to top, transparent 70%, black 100%), url('assets/profilePic2.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        height: 80vh;
+    }
+}
+
+/* CODE FOR SKILLSET PANEL */
+.skillsets_panel{
+    text-align: center;
+}
+.skillsets_panel h1{
+    margin-top: 30px;
+    font-size: 50px;
+    font-family: arial;
+}
+.skillset_grid{
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+}
+.skillItem{
+    font-family: arial;
+    background-color: #FC6D6D;
+    border: 2px solid #333;
+    border-radius: 10px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.skillItem:hover {
+    background-color: #f4bcbc;
+    transform: scale(1.04);
+}
+
+.skillBox{
+    width: 90%;
+}
+
+@media (max-width: 768px) {
+    .skillset_grid{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+}
+@media (max-width: 1403px) {
+    .skillItem{
+        height: 300px;
+    }
+}
+@media (max-width: 1052px) {
+    .skillItem{
+        height: 350px;
+    }
+}
