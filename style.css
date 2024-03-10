@@ -1,90 +1,72 @@
-body {
-    background-image: linear-gradient(135deg, #87CEFA, #1E90FF);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: center;
-    position: relative; /* Set position relative to enable pseudo-elements positioning */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:500');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+.nav_links li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: black;
+    text-decoration: none;
 }
 
-.header {
-    background-color:rgb(62, 175, 172);
-    padding-top:30px;
-    padding-bottom:30px;
-}
-h1 {
-    font-size:60px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:white;
+.nav_header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
 }
 
-.footer {
-    background-color:rgb(62, 175, 172);
-    border:4px solid rgb(33, 99, 99);
+.nav_links {
+    list-style: none;
 }
 
-ul.links {
-    margin-top: -40px;
-    background-color:rgb(43, 222, 172);
-    border:3px solid rgb(87, 160, 175);
-    font-size: 30px;
-    font-family:'Times New Roman', Times, serif;
-    list-style-type: square; /* Remove default list-style */
-    padding-left: 0; /* Remove default padding for the <ul> */
-}
-
-ul.links li {
-    padding-left: 20px; /* Add padding to move the text away from the left edge */
-    margin-bottom: 10px; /* Add some space between list items */
-}
-
-ul.links li:before {
-    content: "\25AA"; /* Unicode for the square bullet point */
+.nav_links li {
     display: inline-block;
-    width: 20px; /* Adjust the width to control the space between bullet point and text */
+    padding: 0px 20px;
 }
 
-pre.start {
-    margin-bottom: -20px;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    position: relative;
 }
 
-pre.intro {
-    background-color: rgb(17, 204, 182)
+.nav_links li a:hover {
+    color: #0088a9;
 }
 
-img.portrait {
-    float:left;
+.nav_links li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0088a9; 
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
 }
 
-pre.golf {
-    background-color: rgb(17, 204, 182)
+.nav_links li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
-img.golfPic {
-    float:right;
+.nav_header button {
+    padding: 9px 25px;
+    background-color: rgba(0,136,139,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
 }
 
-pre.chess {
-    background-color: rgb(17, 204, 182)
+.nav_header button:hover {
+    background-color: rgba(0,136,139,0.8);
 }
-
-img.chessPic {
-    float:left;
-}
-
-h3.info {
-    margin-right: 400px;
-    margin-left: 400px;
-    font-size:40px;
-    font-family:Arial, Helvetica, sans-serif;
-    background-color:rgb(43, 222, 172);
-    border:3px solid rgb(87, 160, 175);
-}
-
-pre {
-    color:black;
-    font-family: verdana;
-    font-size: 23px;
-}
-  
