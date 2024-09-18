@@ -1,12 +1,17 @@
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-const dropDownMenu = document.querySelector('.dropdown_menu')
+function hamburg() {
+    // Show the dropdown
+    document.querySelector('.dropdown').style.transform = 'translateY(0)';
+    
+    // Hide the hamburger icon and show the cancel icon
+    document.querySelector('.hamburg').style.display = 'none';
+    document.querySelector('.cancel').style.display = 'block';
+}
 
-toggleBtn.onclick = function () {
-dropDownMenu.classList.toggle('open')
-const isOpen = dropDownMenu.classList.contains('open')
-
-toggleBtnIcon.classList = isOpen
-    ? 'fa-solid fa-xmark'
-    : 'fa-solid fa-bars'
+function cancel() {
+    // Hide the dropdown by translating it back up
+    document.querySelector('.dropdown').style.transform = 'translateY(-500px)';
+    
+    // Show the hamburger icon and hide the cancel icon
+    document.querySelector('.hamburg').style.display = 'block';
+    document.querySelector('.cancel').style.display = 'none';
 }
