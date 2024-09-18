@@ -1,201 +1,220 @@
-<!DOCTYPE html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title> John Capocyan</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-wdith, initial-scale=1">
-    <script src="app.js" defer></script>
-    <link rel="stylesheet" href = "style.css">
-    <link rel="stylesheet" href = "indexstyle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+<!DOCTYPE HTML>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8" />
+        <title> Responsive Portfolio Website </title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
-<body>
-    <header class="nav_header">
-        <h1>JP</h1>
-        <nav class="nav_bar">
-            <ul class="nav_links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Articles</a></li>
-                <li><a href="#">Photography</a></li>
-            </ul>
+    <body>
+
+        <!-- Navigation Menu -->
+         <nav>
+            <div class="nav-container">
+                <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                    <span> John </span>
+                </div>
+                <div class="links">
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-display="100"><a href="#"> Home </a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-display="200"><a href="#about"> About </a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-display="300"><a href="#skills"> Skills </a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-display="400"><a href="#services"> Services </a></div>
+                    <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-display="500"><a href="#contact"> Contact </a></div>
+                </div>
+                <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+            </div>
+            <div class="dropdown">
+                <div class="links">
+                    <a href="#"> Hello </a>
+                    <a href="#about"> About </a>
+                    <a href="#skills"> Skills </a>
+                    <a href="#services"> Services </a>
+                    <a href="#contact"> Contact </a>
+                    <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+                </div>
+            </div>
         </nav>
-        <a class="cta" href="#"><button>Contact</button></a>
-        <div class="toggle_btn">
-            <i class="fa-solid fa-bars"></i>
-        </div>
 
-        <div class="dropdown_menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Articles</a></li>
-            <li><a href="#">Photography</a></li>
-            <li><a class="cta" href="#"><button>Contact</button></a></li>
-        </div>
-    </header>
 
-    <section class="introduction_panel">
-        <div class="introBox">
-            <div class="nameBox">
-                <h1>Hello! I'm <br><span class="highlight">John Patrick Capocyan</span></h1>
-                <div class="wrapper">
-                    <div class="static-txt">I'm a</div>
-                    <ul class="dynamic-txts">
-                        <li><span>DEVELOPER</span></li>
-                        <li><span>DESIGNER</span></li>
-                        <li><span>RESEARCHER</span></li>
-                        <li><span>BUILDER</span></li>
-                    </ul>
+        <!-- Introduction Section Start -->
+        <section>
+            <div class="main-container">
+                <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                    <img src="main.jpg" alt="">
                 </div>
-                <p>I am a current student attending William P. Clements High School
-                    and a passionate Web Developer and Machine Learning Researcher.
-                    It is my goal to grow my knowledge in both fields to help the
-                    community and solve large-scale world problems.</p>
-            </div>
-        </div>
-        <div class="introBox">
-            <div class="introPicBox"></div>
-        </div>
-    </section>
-
-    <section class="about_panel">
-        <div class="main">
-            <img src="assets/profilePic3.jpg">
-            <div class="about-text">
-                <h1>About Me</h1>
-                <h5>Developer <span>& Producer</span></h5>
-                <p>I am a junior attending Clements High School in Sugar Lang, Texas.
-                    I have been a passionate programmer since the beginning of my
-                    freshman year of highschool, and I now focus my work on research to 
-                    change the world. I've created numerous projects for the community
-                    and submitted a publication in the IEEE. Let's connect to work on 
-                    large-scale projects!
-                </p>
-                <button type="button">Let's Chat</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="skillsets_panel">
-        <h1>SKILLSETS AND MY CODING JOURNEY</h1>
-        <div class="skillset_grid">
-            <div class="skillItem item1">
-                <div class="skillBox">
-                    <h2>Java</h2>
-                    <p>I started learning Java in my sophomore year of highschool. I mastered skills in 
-                        object-oriented programming, and I also learned different algorithms and data
-                        structures taking this course. I don't use much Java in the real-world applications
-                        but I always resort to the language when solving problems on LeetCode.
-                    </p>
-                </div>
-            </div>
-            <div class="skillItem item2">
-                <div class="skillBox">
-                    <h2>Python</h2>
-                    <p>I learned basic python syntax and graphics functions starting my freshman year 
-                        of highschool. Eventually, I taught myself more advanced Python during the beginning
-                        of my sophomore year in highschool. I retranslate LeetCode problems I solved in Java to Python.
-                    </p>
-                </div>
-            </div>
-            <div class="skillItem item3">
-                <div class="skillBox">
-                    <h2>Web Development</h2>
-                    <p>I became motivated to learn HTML, CSS, and JavaScript the summer after my sophomore year.
-                        I decided to become a self-driven web developer and voluneteered to help others and my
-                        community in improving and redesigning their websites to improve online marketing and profit.
-                        I am currently improving my skills in Flask and Django.
-                    </p>
-                </div>
-            </div>
-            <div class="skillItem item4">
-                <div class="skillBox">
-                    <h2>Machine Learning</h2>
-                    <p>I developed an interest in machine learning around the beginning of my junior year. I learned
-                        the foundations of neural networks and data processing after attending IDTech's Aritifical Intelligence
-                        summer program. I was able to develop my own convolutional neural network that was efficient in
-                        diagnosing lung cancer, and I was invited to present my model in Princeton University in front of 
-                        chair members of the Institute of Electrical and Electronics Engineers (IEEE).
-                    </p>
-                </div>
-            </div>
-            <div class="skillItem item5">
-                <div class="skillBox">
-                    <h2>Design</h2>
-                    <p>Throughout my web development journey, I learned to become profficient in visual design and aesthetics.
-                        I primarily use Canva and Figma when creating visual graphics for online advertisements or even
-                        websites. I also utilize Tableau to reorganize data I collect so their impact is emphasized in a 
-                        new manner.
-                    </p>
-                </div>
-            </div>
-            <div class="skillItem item6">
-                <div class="skillBox">
-                    <h2>Public Speaking</h2>
-                    <p>I'm a great collaborator and public speaker. I held a math tutoring job for 2 years where I helped kids
-                        of all ages in improving their mathematical and critical thinking skills. Afterwards, I decided to 
-                        switch to private tutoring online where I teach other kids that even reside in other states.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="projects_panel">
-        <div class="projects_container">
-            <div class="projects_title">
-                <h1>PROJECTS</h1>
-            </div>
-            <div class="project_description">
-                <div class="project_description_insider">
-                    <p>Throughout my career I built numerous projects of any scale. Whether it's a passion project or 
-                        a collaboration project, I'm always pushed to use the best of my coding abilities to produce the
-                        best product possible. I post code for most of my work on my GitHub page which is linked below.
-                        Click the projects button to view all my work!
-                    </p>
-                    <div class="project_links">
-                        <a class="git" href="#"><button>GitHub Page</button></a>
-                        <a class="project_button" href="#"><button>Projects</button></a>
+                <div class="content">
+                    <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">
+                        Hey I'm
+                        <span> John </span>
+                    </h1>
+                    <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
+                        I'm a 
+                        <span class="typewriter-text">Programmer</span>
+                        <label for="">|</label>
+                    </div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos commodi modi quam, laudantium omnis facere voluptates delectus mollitia eaque, nisi iure ad ea eveniet dolor consequuntur corrupti. Illo, ad itaque.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/J7P16" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/j7p16" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/johnpatrickcapocyanai/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://x.com/CapocyanJo87791" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                        <button> Hire Me </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="research_panel">
-    </section>
 
-    <section class="awards_panel">
-    </section>
+        <!-- About Section Start -->
+        <section class="about" id="about">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500"><span> About Me </span></div>
+            </div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+                    <img src="main2.jpg" alt="" />
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300"> Designing Is My Passion </div>
+                    <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quae cupiditate libero nihil, quibusdam provident, deserunt nesciunt ut, adipisci iusto facere quidem a architecto. Assumenda error consectetur rem at voluptas.</p>
+                    <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400">
+                        <button> Download CV </button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <section class="hobbies_panel">
-    </section>
 
-    <section class="contact_panel">
-    </section>
+        <!-- My Skill Section Start -->
+        <section class="skills" id="skills">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1200"><span> My Skills </span></div>
+                <div class="skills-details">
+                    <div class="text">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
+                            Skills Reflects Our Knowledge
+                        </div>
+                        <p data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores architecto eaque consequuntur necessitatibus. Fuga quis aspernatur minima? Sed nostrum vitae harum aspernatur similique? Reprehenderit, illo tenetur. Accusantium ducimus officiis ratione!</p>
+                        <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+                            <div class="num"> 3 </div>
+                            <div class="exp">
+                                Years Of <br />
+                                Experience
+                            </div>
+                    </div>
+                </div>
+                <div class="boxes">
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="150"> Front-End </div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300"> 60% </div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="150"> Back-End </div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="300"> 30% </div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="450"> ML </div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"> 90% </div>
+                    </div>
+                    <div class="box">
+                        <div class="topic" data-aos="fade-left" data-aos-duration="1200" data-aos-delay="450"> Research </div>
+                        <div class="per" data-aos="zoom-in" data-aos-duration="1200" data-aos-delay="600"> 80% </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <div class="footerContainer">
-          <div class="socialIcons">
-            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
-            <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube"></i></a>
-          </div>
-          <div class="footerNav">
-            <ul>
-                <li><a href="index.html ">Home</a></li>
-                <li><a href="newsletter.html">Articles</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div>
-        </div>
-        <div class="footerBottom">
-            <p><span class="designer">John Capocyan</span><br>Copyright &copy;2024 </p>
-        </div>
-    </footer>
-</body>
+
+        <!-- My Services Section Start-->
+         <section class="services" id="services">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1200"><span> My Services </span></div>
+                <div class="boxes">
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+                        <div class="icon">
+                            <i class="fas fa-desktop"> </i>
+                        </div>
+                        <div class="topic"> Web Development </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum tenetur, voluptatibus aliquam deleniti id, minus accusantium in nisi obcaecati velit, saepe eum eligendi alias suscipit facere praesentium sint? Porro!</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
+                        <div class="icon">
+                            <i class="fas fa-tablet-alt"> </i>
+                        </div>
+                        <div class="topic"> App Development </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum tenetur, voluptatibus aliquam deleniti id, minus accusantium in nisi obcaecati velit, saepe eum eligendi alias suscipit facere praesentium sint? Porro!</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
+                        <div class="icon">
+                            <i class="fas fa-paint-brush"> </i>
+                        </div>
+                        <div class="topic"> Graphic Design </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum tenetur, voluptatibus aliquam deleniti id, minus accusantium in nisi obcaecati velit, saepe eum eligendi alias suscipit facere praesentium sint? Porro!</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
+                        <div class="icon">
+                            <i class="fas fa-brain"> </i>
+                        </div>
+                        <div class="topic"> AI Research </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum tenetur, voluptatibus aliquam deleniti id, minus accusantium in nisi obcaecati velit, saepe eum eligendi alias suscipit facere praesentium sint? Porro!</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
+                        <div class="icon">
+                            <i class="fas fa-pencil-ruler"> </i>
+                        </div>
+                        <div class="topic"> Icon Design </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum tenetur, voluptatibus aliquam deleniti id, minus accusantium in nisi obcaecati velit, saepe eum eligendi alias suscipit facere praesentium sint? Porro!</p>
+                    </div>
+                    <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
+                        <div class="icon">
+                            <i class="fas fa-camera-retro"> </i>
+                        </div>
+                        <div class="topic"> Photography </div>
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum ipsum tenetur, voluptatibus aliquam deleniti id, minus accusantium in nisi obcaecati velit, saepe eum eligendi alias suscipit facere praesentium sint? Porro!</p>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+
+         <!-- Contact Me Section Start -->
+        <section class="contact" id="contact">
+            <div class="content">
+                <div class="title" data-aos="fade-up" data-aos-duration="1500">
+                    <span> Contact Me </span>
+                </div>
+                <div class="text">
+                    <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200"> 
+                        Have any project ideas or inquiries about my work?
+                    </div>
+                    <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus quod eligendi enim eaque accusantium illum esse ad dolorum, dolorem perferendis in modi harum, neque soluta non. Qui fugit dolor numquam. </p>
+                    <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
+                        <button> <a href="mailto: name@email.com"> Let's Chat </a> </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Footer Section Start -->
+        <footer>
+            <div class="text">
+                <span> Created By
+                    <a href="#"> John Capocyan </a>
+                    | &#169; 2024 All Rights Reserved 
+                </span>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({offset:0});
+        </script>
+        <script src="app.js"></script>
+    </body>
 </html>
