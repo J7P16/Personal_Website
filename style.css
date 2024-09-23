@@ -143,21 +143,41 @@ section{
 
 section .main-container{
     display: flex;
-    justify-content: space-between;
-    padding-left: 100px;
+    justify-content: center; 
+    align-items: center;     
+    max-width: 1800px;       
+    margin: 0 auto;          
+    padding: 0 20px;    
+    height: 80vh;    
+}
+
+.main-container .image-container{
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .main-container .image{
-    width: 500px;
-    height: 670px;
+    width: 100%;
+    max-width: 400px;
+    min-width: 300px;
+    min-height: 400px;
+    height: auto;
     border-radius: 10%;
     overflow: hidden;
     box-shadow: 0 0 50px #b74b4b;
 }
 
+@media (max-width: 900px){
+    .main-container .image{
+        margin-top: 100px;
+    }
+}
+
 .main-container .image img{
     width: 100%;
+    height: auto;
+    display: block;
 }
 
 .main-container .image:hover{
@@ -180,7 +200,8 @@ section .main-container{
 
 .main-container .content{
     color: white;
-    width: 40%;
+    padding: 20px;
+    text-align: left;
 }
 
 .content h1{
@@ -260,6 +281,13 @@ section .main-container{
     background-color: transparent;
     font-weight: 700;
     box-shadow: 0 0 40px #b74b4b;
+}
+
+.main-container .image-container,
+.main-container .content {
+    flex: 1 1 50%;      /* Each takes up 50% of the container */
+    max-width: 600px;   /* Prevents the elements from getting too wide */
+    box-sizing: border-box;
 }
 
 /* About Section Styling */
