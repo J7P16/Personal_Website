@@ -398,15 +398,15 @@ section .button button:hover{
 }
 
 .skills-details .boxes{
-    width: 45%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 45%;
 }
 
 .skills-details .box{
-    width: calc(100% / 2- 20px);
-    margin: 20px 0;
+    flex: 1 1 45%;
+    margin: 10px 0;
 }
 
 .skills-details .boxes .topic{
