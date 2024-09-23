@@ -172,6 +172,9 @@ section .main-container{
     .main-container .image{
         margin-top: 100px;
     }
+    .main-container{
+        height: 60vh;
+    }
 }
 
 .main-container .image img{
@@ -238,6 +241,15 @@ section .main-container{
     margin: 10px 0;
 }
 
+.social-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 20px;
+}
+
 .social-links i{
     display: inline-flex;
     justify-content: center;
@@ -281,6 +293,12 @@ section .main-container{
     background-color: transparent;
     font-weight: 700;
     box-shadow: 0 0 40px #b74b4b;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-container .image-container,
@@ -641,10 +659,15 @@ footer .text span a{
         font-size: 1.5rem;
     }
 
+    .main-container .image-container{
+        height: 2800px;
+    }
+
     .main-container .image{
         z-index: -1;
         width:50%;
         height: 60%;
+        margin-top: 150px;
     }
 
     .skills .skills-details{
@@ -675,14 +698,18 @@ footer .text span a{
 }
 
 @media (max-width: 500px){
-    .main-container .image{
-        width: 50%;
-        height: 60%;
+    .main-container{
+        height: 100%;
         margin-bottom: 0px;
+    }
+    .main-container .image-container{
+        margin-bottom: 0px;
+        display: none;
     }
 
     .main-container .content{
         width: 80%;
+        align-items: center;
     }
 
     .main-container button{
