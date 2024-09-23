@@ -113,7 +113,7 @@ nav{
     transform: translateY(-500px);
     width: 100%;
     height: auto;
-    backdrop-filter: blur(4px) brightness(40%);
+    backdrop-filter: blur(4px) brightness(5%);
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
 }
@@ -129,7 +129,7 @@ nav{
 }
 
 .dropdown .links a:visited {
-    color: white; /* Ensure visited links also stay white */
+    color: white; 
 }
 
 .dropdown .links a:hover{
