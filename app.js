@@ -52,3 +52,39 @@ function type() {
 window.onload = function() {
     type();
 };
+
+// Modal functionality
+function openModal() {
+    document.getElementById('contactModal').style.display = 'block';
+}
+
+function closeModal() {
+    document.getElementById('contactModal').style.display = 'none';
+}
+
+// Close Model to Exit
+window.onclick = function(event) {
+    const modal = document.getElementById('contactModal');
+    if (event.target == modal) {
+        closeModal();
+    }
+}
+
+// EmailJS API Functionality
+(function() {
+    emailjs.init('wMzOnzpyE4Lk5oGwX'); 
+})();
+
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    emailjs.sendForm('service_es9ldsd', 'template_4q2v847', this, 'wMzOnzpyE4Lk5oGwX')
+        .then(function() {
+            alert('Message sent successfully!');
+            document.getElementById('contact-form').reset();
+            closeModal();
+        }, function(error) {
+            alert('Failed to send the message. Please try again.');
+            console.error('EmailJS Error:', error);
+        });
+});
